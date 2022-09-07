@@ -4,7 +4,7 @@ name: Second workflow
 
 env:
   msg: "Hello from env var"
-
+  var_name: 80
 
 # Controls when the workflow will run
 on:
@@ -28,4 +28,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo $msg
+        run: echo $var_name
