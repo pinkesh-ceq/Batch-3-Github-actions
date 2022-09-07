@@ -2,6 +2,10 @@
 
 name: Second workflow
 
+env:
+  msg: "Hello from env var"
+
+
 # Controls when the workflow will run
 on:
   push:
@@ -24,4 +28,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Pushing code to my master branch
+        run: echo $msg
