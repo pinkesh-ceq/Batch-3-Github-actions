@@ -34,10 +34,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
         with:
-          python-version: '3.10' 
+          python-version: '3.7'
+
       - name: Run python script
         run: |
           cd sc
           python a.py
+
