@@ -38,5 +38,5 @@ jobs:
         with:
           python-version: '3.10' 
       - run: |
-      cd sc
-      python new.py
+        cd sc
+        python new.py
