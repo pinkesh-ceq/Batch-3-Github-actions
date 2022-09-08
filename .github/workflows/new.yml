@@ -40,7 +40,5 @@ jobs:
           python-version: '3.7'
 
       - name: Run python script
-        run: |
-          cd sc
-          python a.py
+        run: python b.py
 
