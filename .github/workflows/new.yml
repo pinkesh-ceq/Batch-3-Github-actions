@@ -47,4 +47,3 @@ jobs:
 
       - name: Run python script
         run: python b.py
-
