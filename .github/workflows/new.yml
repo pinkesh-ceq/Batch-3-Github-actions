@@ -30,7 +30,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo $var_name
+        run: echo $var_name .
 
       - name: Use of secrets
         run: echo ${{ secrets.Password }}
