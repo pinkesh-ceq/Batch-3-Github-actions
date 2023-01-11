@@ -21,7 +21,7 @@ jobs:
     
     # The type of runner that the job will run on
     # runs-on: self-hosted
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -35,16 +35,16 @@ jobs:
       - name: Use of secrets
         run: echo ${{ secrets.Password }}
 
-  run_python_script:
-    needs: Job1
-    runs-on: ubuntu-latest
+  # run_python_script:
+  #   needs: Job1
+  #   runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v3
-        with:
-          python-version: '3.7'
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - uses: actions/setup-python@v3
+  #       with:
+  #         python-version: '3.7'
 
-      - name: Run python script
-        run: python b.py
+  #     - name: Run python script
+  #       run: python b.py
 
