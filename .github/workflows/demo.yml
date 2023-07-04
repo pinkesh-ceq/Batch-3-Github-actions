@@ -28,7 +28,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: gh auth login -p http --with-token $GH_TOKEN
+        run: gh auth login --with-token $GH_TOKEN
       - name: Run a one-line script
         run: gh secret set SECRET_NAME -b "Hello"
 
