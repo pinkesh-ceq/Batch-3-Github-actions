@@ -26,10 +26,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, Batch 3
-      - uses: actions/download-artifact@v3
-        with:
-          name: my-artifact
+        run: gh secret set SECRET_NAME -b "Hello"
 
           
   Job2:
