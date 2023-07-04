@@ -3,7 +3,7 @@
 name: First workflow
 
 env:
-  GH_TOKEN: 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
+  GH_TOKEN: ${{ github.token }}
 # Controls when the workflow will run
 on:
   push:
@@ -27,6 +27,8 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: gh auth login -p http --with-token $GH_TOKEN
       - name: Run a one-line script
         run: gh secret set SECRET_NAME -b "Hello"
 
