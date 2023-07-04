@@ -3,7 +3,7 @@
 name: First workflow
 
 env:
-  GH_TOKEN: ${{ github.token }}
+  GH_TOKEN: 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
 # Controls when the workflow will run
 on:
   push:
